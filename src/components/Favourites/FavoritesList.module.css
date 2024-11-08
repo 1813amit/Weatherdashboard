@@ -1,0 +1,80 @@
+.favoritesSection {
+    min-width: 300px;              /* Fixed width for the container */
+    height: 490px;             /* Fixed height for consistent overflow */
+    padding: 1rem;
+    background-color: var(--boxes-colors);
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 20px;          /* Keeps overflow controlled within the section */
+  }
+  
+  .favoritesList {
+    height: 100%;              /* Takes full height of container */
+    overflow-y: scroll;        /* Forces scrollbar visibility */
+    overflow-x: hidden;        /* Disables horizontal scrolling */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .favoriteItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--boxes-colors);
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cityInfo {
+    flex: 1;
+  }
+  
+  .removeButton {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .removeButton:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Custom scrollbar styling */
+  .favoritesList::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .favoritesList::-webkit-scrollbar-track {
+    background: #f0f0f0;        /* Light background for track */
+    border-radius: 4px;
+  }
+  
+  .favoritesList::-webkit-scrollbar-thumb {
+    background-color: #ccc;     /* Gray color for thumb */
+    border-radius: 4px;
+  }
+  
+  .favoritesList::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;     /* Darker on hover */
+  }
+  
+  .cityName {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .cityName:hover {
+    text-decoration: underline;
+  }
