@@ -66,6 +66,8 @@ fetch(
 
 
 ### Run Code using :
-React app : Npm run dev
-json server : npm run json-server
+ ## First run react server
+- React app : Npm run dev
+  ## Second run json server
+- json server : npm run json-server
 
